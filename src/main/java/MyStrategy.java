@@ -13,10 +13,6 @@ public final class MyStrategy implements Strategy {
         double nextWaypointX = (self.getNextWaypointX() + 0.5D) * game.getTrackTileSize();
         double nextWaypointY = (self.getNextWaypointY() + 0.5D) * game.getTrackTileSize();
 
-        TileType[][] map = world.getTilesXY();
-
-        int[][] wayPoints = world.getWaypoints();
-
         double cornerTileOffset = 0.25D * game.getTrackTileSize();
 
         switch (world.getTilesXY()[self.getNextWaypointX()][self.getNextWaypointY()]) {
